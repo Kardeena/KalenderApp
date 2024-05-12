@@ -1,18 +1,9 @@
-<script setup lang="ts">
-
-</script>
-
-<template>
-
-</template>
-
-<style scoped>
-
-</style>
 <template>
   <div>
-
-
+    <ul>
+      <li v-for="item in items" :key="item.name">{{ item.name }}</li>
+      <p v-if="isLoggedIn">Willkommen zurück!</p>
+    </ul>
   </div>
 </template>
 
